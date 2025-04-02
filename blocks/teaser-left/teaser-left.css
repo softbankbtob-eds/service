@@ -1,0 +1,131 @@
+.teaser-left-wrapper {
+    width: 100vw;
+    margin-right: calc(50% - 50vw);
+    margin-left: calc(50% - 50vw);
+}
+.teaser-left {
+    padding-left: 4%;
+}
+.teaser-left-body {
+    display: flex;
+    /* align-items: center; */
+    align-items: stretch;
+    justify-content: right;
+    gap: 32px;
+}
+.teaser-left-img {
+   width: 50% !important;
+   flex-grow: 1;
+    width: auto;
+    overflow: hidden;
+}
+.teaser-left-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+ }
+.teaser-left-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-block: 40px;
+    width: 50%;
+}
+.teaser-left-text .pretitle {
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+.teaser-left-text .pretitle,
+.teaser-left-text p,
+.teaser-left-text h1 {
+    font-weight: 700;
+    line-height: 1.25;
+}
+.teaser-left-text h1 {
+    font-size: 28px;
+    margin-top: 0;
+}
+.teaser-left-text > .txt {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 16px;
+    font-weight: 500;
+}
+.teaser-left-text .buttons-wrapper {
+    display: flex;
+    gap: 8px;
+    margin-top: 32px;
+}
+.teaser-left a.button.secondary {
+    background-color: #fff;
+}
+
+/* ボタンのデザイン PCのみ */
+@media (width >= 769px) {
+    .teaser-left-text .buttons-wrapper .button-container a.button {
+        padding: 16px 55px 16px 32px;
+    }
+    .teaser-left-text .buttons-wrapper .button-container a.button::after {
+        right: 32px;
+    }
+}
+
+/* 見出しの大きさ */
+.teaser-left.heading-l .teaser-left-text h1 {
+    font-size: 36px;
+}
+.teaser-left.heading-ll .teaser-left-text h1 {
+    font-size: 44px;
+}
+.teaser-left.heading-lll .teaser-left-text h1 {
+    font-size: 48px;
+}
+.teaser-left.heading-llll .teaser-left-text h1 {
+    font-size: 54px;
+}
+
+/* 文字色 */
+.teaser-left.text-white {
+    color: #fff;
+}
+
+@media only screen and (width <= 768px){
+    .teaser-left {
+        padding-inline: 0;
+        margin-top: 24px;
+    }
+    .teaser-left-body {
+        flex-direction: column-reverse;
+        gap: 16px;
+        padding-bottom: 40px;
+    }
+    .teaser-left-text,
+    .teaser-left-img {
+        width: 100% !important;
+    }
+    .teaser-left-text {
+        padding: 0 24px;
+    }
+    .teaser-left-text .pretitle {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+    .teaser-left-text h1 {
+        font-size: 24px;
+    }
+
+    /* 見出しの大きさ */
+    .teaser-left.heading-l .teaser-left-text h1 {
+        font-size: 24px;
+    }
+    .teaser-left.heading-ll .teaser-left-text h1 {
+        font-size: 26px;
+    }
+    .teaser-left.heading-lll .teaser-left-text h1 {
+        font-size: 28px;
+    }
+    .teaser-left.heading-llll .teaser-left-text h1 {
+        font-size: 30px;
+    }
+}
